@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="th"><head><meta charset="utf-8"><title>How Many Days? (Visual Novel)</title>
+<!DOCTYPE html><html lang="th"><head><meta charset="utf-8"><title>Reborn to Win Eve (Visual Novel)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--n:#263B56;--b:#526B72;--s:#A7B9A2;--c:#E8D9C5;--p:#C98C91;--g:#E4B968;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *{box-sizing:border-box}html,body{margin:0;background:#0b1226;color:var(--c);font-family:Prompt,sans-serif}
@@ -33,12 +33,116 @@ input[type=range]{width:100%}.pop{animation:pp .3s}@keyframes pp{from{opacity:0;
 .btn{padding:14px;font-size:16px;margin:8px 0;touch-action:manipulation}
 .top{flex-wrap:wrap;gap:6px 8px;padding:8px 10px}.top button{min-width:40px;min-height:36px;font-size:16px}
 .two{grid-template-columns:1fr!important}
-.evw{padding:6px 4px 24px}.hd{font:10px 'Press Start 2P';color:#cbd2e8;margin:10px 0 14px}.hd b{color:var(--g);margin-right:8px}
+.a2{--bg:#f5f4f0;--sf:#fff;--s2:#f0eeea;--s3:#e8e5df;--bd:rgba(0,0,0,.08);--bd2:rgba(0,0,0,.14);--tx:#1a1a18;--t2:#5a5850;--t3:#9a9890;--ac:#5a9e20;--acd:#3d7010;--acl:rgba(90,158,32,.10);--rd:16px;--rs:10px;margin:-8px;min-height:100dvh;background:var(--bg);color:var(--tx);font-family:Prompt,sans-serif;padding-bottom:84px}.a2 header{padding:16px;background:var(--sf);color:var(--tx);border-bottom:1px solid var(--bd)}.a2 header small{display:block;font-size:12px;color:var(--t3)}.a2 header b{font-size:19px}
+.a2 nav{display:flex;background:var(--sf);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:5}.a2 nav button{flex:1;padding:13px 4px;border:0;border-bottom:3px solid transparent;background:none;font:600 14px Prompt;color:var(--t3);cursor:pointer}.a2 nav button.on{color:var(--acd);border-color:var(--ac)}
+.a2 .cd{background:var(--sf);border:1px solid var(--bd);border-radius:var(--rd);margin:12px;padding:14px;line-height:1.6}.a2 .cd.hl{background:var(--acl);border-color:rgba(90,158,32,.25);border-left:4px solid var(--ac)}.a2 .cd.ds{border:1px dashed var(--bd2);background:var(--s2)}
+.a2 .gh{margin:18px 14px 2px;font-weight:600;color:var(--t2);font-size:14px}.a2 details{background:var(--sf);border:1px solid var(--bd);border-radius:var(--rd);margin:8px 12px;overflow:hidden}.a2 summary{list-style:none;display:flex;align-items:center;gap:10px;padding:14px;font-weight:600;cursor:pointer}.a2 summary::-webkit-details-marker{display:none}.a2 summary i{font-style:normal;color:var(--t3);transition:.2s}.a2 details[open]>summary i{transform:rotate(180deg)}.a2 details[open]{border-color:var(--ac)}
+.a2 .dbd{padding:0 14px 14px;font-size:15px;color:var(--t2);line-height:1.6}.a2 .chip{margin-left:auto;font-size:13px;background:rgba(201,125,16,.10);color:#c97d10;border-radius:20px;padding:2px 9px;white-space:nowrap}.a2 .chip svg{vertical-align:middle}.a2 .no{font:9px 'Press Start 2P';color:var(--t3)}
+.a2 .go{display:block;width:100%;margin:10px 0 0;padding:13px;border:0;border-radius:var(--rs);background:var(--ac);color:#fff;font:600 16px Prompt;cursor:pointer}.a2 .go:active{background:var(--acd)}.a2 .go.alt{background:var(--s3);color:var(--tx)}.a2 .go[disabled]{opacity:.4;cursor:not-allowed}
+.a2 .cta{position:fixed;left:0;right:0;bottom:0;max-width:480px;margin:0 auto;padding:12px;background:linear-gradient(rgba(245,244,240,0),#f5f4f0 35%)}.a2 .cta .go{margin:0}
+.a2 .st{display:grid;grid-template-columns:84px 1fr 32px;gap:8px;align-items:center;font-size:14px;margin:6px 0}.a2 .st u{display:block;height:8px;background:var(--s3);border-radius:4px;overflow:hidden}.a2 .st b{display:block;height:100%}
+.a2 h2.q{color:var(--tx);font:600 24px Prompt;margin:20px 14px 4px}.a2 p.sb{margin:0 14px 8px;color:var(--t2)}.hd{font:10px 'Press Start 2P';color:#cbd2e8;margin:10px 0 14px}.hd b{color:var(--g);margin-right:8px}
 .nb{background:#1f2b3d;border-left:4px solid #c9a35a;padding:14px 16px;margin:12px 0;font-size:17px;line-height:1.7}.nb.g1{background:#2f2a24}.nb.g1 b{color:var(--g);font-size:19px}
 .lg{border:1px dashed #4a5a80;padding:12px 14px;margin:12px 0;font-size:15px;background:#111a30}
 .eq{font:600 28px Prompt;color:#fbf0dc;margin:22px 0 8px}.es{color:#a9b4d0;margin:0 0 16px}
 .op{display:flex;align-items:center;gap:14px;width:100%;margin:10px 0;padding:14px 16px;background:#1d2b49;color:var(--c);border:2px solid #3a4c74;border-left:5px solid #4a5f8f;box-shadow:0 4px 0 #070c1a;text-align:left;cursor:pointer;font-family:Prompt}
 .op:hover:not(:disabled){border-color:var(--g)}.op:disabled{opacity:.4;cursor:not-allowed}.on{font:9px 'Press Start 2P';color:#9fb0d8}.ot{flex:1}.ot b{display:block;font-size:20px;color:#fbf0dc}.ot small{font-size:15px;opacity:.8}.oc{text-align:right;font-size:13px;color:#b8c2e0;line-height:1.8;white-space:nowrap}.oc svg{vertical-align:middle}
+
+.gh2{font:600 17px Prompt;color:var(--g);margin:16px 2px 4px}.sub{text-align:center;margin:-4px 0 10px;color:#a9b4d0;font-size:14px}
+.sch{display:flex;gap:12px;width:100%;margin:9px 0;padding:13px 14px;background:#16233f;color:var(--c);border:2px solid #35476a;box-shadow:0 3px 0 #070c1a;text-align:left;cursor:pointer;font-family:Prompt,sans-serif;touch-action:manipulation}
+.sch:hover{border-color:#6b7fa8}.sch.sel{border-color:var(--g);background:#1d2d50}.sch:active{transform:translateY(3px);box-shadow:none}
+.sch>i{flex:none;width:16px;height:16px;margin-top:4px;border:2px solid #6b7fa8;background:#0f1830}.sch.sel>i{background:var(--g);border-color:var(--g);box-shadow:inset 0 0 0 3px #1d2d50}
+.sch .sn{display:block;font:600 17px Prompt;color:#fff}.sch small{display:block;margin-top:2px;font-size:13px;color:#a9b4d0}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.pills b{font:400 12px Prompt;background:#0f1830;border:1px solid #2c3f66;padding:2px 8px;color:#b9c4de}
+.sd{display:block;margin-top:9px;font-size:14px;line-height:1.55;color:var(--c);border-top:1px dashed #4a5a80;padding-top:8px}
+.ys{margin:-8px;min-height:100dvh;background:#162039;padding:26px 18px 56px;font-family:Prompt,sans-serif;color:var(--c)}
+.ys .kk{font-size:15px;color:#a9b4d0}.ys .kk b{color:var(--g);font-weight:600;margin-right:10px}
+.ys h2{font:600 26px/1.35 Prompt;color:#f6efe0;margin:14px 0 20px}
+.ysc{position:relative;height:190px;display:flex;gap:8px;border-top:1px solid #34466a;border-bottom:1px solid #34466a}
+.ysc:after{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px solid #8d9bb8}
+.yb{position:relative;flex:1 1 0;max-width:44px;min-width:12px}
+.yb i{position:absolute;left:0;right:0;animation:yg .5s steps(6) both}.yb i.p{bottom:50%;background:#8fc79a;transform-origin:bottom}.yb i.n{top:50%;background:#d9808f;transform-origin:top}
+.yb.old i{opacity:.55}@keyframes yg{from{transform:scaleY(0)}}
+.yax{display:flex;gap:8px;margin-top:4px}.yax span{flex:1 1 0;max-width:44px;min-width:12px;text-align:center;font-size:11px;color:#7f8db0}
+.ylg{display:flex;flex-wrap:wrap;gap:6px 16px;margin:14px 0 18px;font-size:14px;color:#a9b4d0}.ylg i{display:inline-block;width:14px;height:14px;margin-right:7px;vertical-align:-2px}
+.y3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.yk{background:#111a33;border:2px solid #34466a;padding:12px}
+.yh{display:flex;gap:8px;align-items:center;min-height:34px}.yh span{font-size:13px;line-height:1.25;color:#a9b4d0}
+.yk b{display:block;margin-top:4px;font:600 22px Prompt;color:#f6efe0;white-space:nowrap}.yk b.up{color:#8fc79a}.yk b.dn{color:#d9808f}
+.ym{display:flex;gap:12px;align-items:flex-start;font-size:19px;line-height:1.5;margin:24px 0 6px;color:#e7dfcf}.ym svg{flex:none;margin-top:5px}
+.yd{font-size:14px;color:#8f9cbd;margin:0 0 20px 34px}
+.yg{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.5;color:#a9b4d0;margin:12px 0 0}.yg svg{flex:none;margin-top:3px}
+.yn{margin-top:28px;background:#E0B366;color:#161b2e;font:600 22px Prompt;padding:16px 42px;border:0;box-shadow:0 5px 0 #8f6f35;cursor:pointer}.yn:active{transform:translateY(4px);box-shadow:0 1px 0 #8f6f35}.yn:focus-visible{outline:3px solid var(--p);outline-offset:3px}
+
+/* ===== modern theme ===== */
+:root{--n:#0e1122;--c:#eceff9;--g:#8b7bff;--p:#f0abfc}
+html,body{background:#090b14;background-image:radial-gradient(900px 520px at 12% -8%,rgba(124,108,255,.20),transparent 60%),radial-gradient(700px 520px at 100% 8%,rgba(56,189,248,.11),transparent 60%);background-attachment:fixed;color:#eceff9}
+h1{font:800 36px/1.08 Prompt,sans-serif;letter-spacing:.03em;background:linear-gradient(90deg,#b4a9ff,#38bdf8);-webkit-background-clip:text;background-clip:text;color:transparent;margin:16px 0 18px}
+h2{color:#fff}
+.stage{border:1px solid rgba(255,255,255,.10);border-radius:24px;box-shadow:0 24px 60px -24px rgba(0,0,0,.8)}
+.top{background:rgba(9,11,20,.55);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);font:600 12px Prompt,sans-serif}
+.bar{height:6px;border:0;border-radius:99px;background:rgba(255,255,255,.14);overflow:hidden}.bar i{border-radius:99px}
+.top button{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.14);border-radius:10px;color:#fff}
+.box{background:rgba(13,16,32,.78);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);color:#f3f5fd;border:1px solid rgba(255,255,255,.14);border-radius:20px;box-shadow:0 14px 40px -14px rgba(0,0,0,.7);padding:16px 18px}
+.nm{background:linear-gradient(90deg,#7c6cff,#38bdf8);color:#fff;font:600 12px Prompt,sans-serif;border:0;border-radius:99px;padding:5px 14px;top:-15px;left:14px}
+.nx{color:#b4a9ff}
+#cho:not(:empty){background:rgba(9,11,20,.72);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:10px}
+.btn{border-radius:16px;padding:15px 18px;font:600 16px Prompt,sans-serif;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#eef0f8;box-shadow:none;text-align:center;transition:background .15s,border-color .15s,transform .1s,filter .15s}
+#cho .btn{text-align:left}
+.btn:hover{background:rgba(255,255,255,.11);border-color:rgba(180,169,255,.65)}
+.btn:active{transform:scale(.98);box-shadow:none}
+.btn.g{background:linear-gradient(135deg,#7c6cff,#38bdf8);border:0;color:#fff;box-shadow:0 12px 28px -12px rgba(124,108,255,.9)}
+.btn.g:hover{filter:brightness(1.1);background:linear-gradient(135deg,#7c6cff,#38bdf8)}
+.btn:disabled{opacity:.38;filter:none}
+.btn small{margin-top:3px;font-size:13px}
+.btn:focus-visible,.sch:focus-visible{outline:2px solid #b4a9ff;outline-offset:2px}
+.ov{background:rgba(6,8,16,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.pn{background:#12152a;border:1px solid rgba(255,255,255,.10);border-radius:24px;padding:22px;box-shadow:0 30px 80px -20px rgba(0,0,0,.85)}
+input[type=range]{accent-color:#7c6cff}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);border-radius:16px}
+.hd{font:600 13px Prompt,sans-serif}.on{font:600 12px Prompt,sans-serif;color:#aab2cf}
+.nb{background:rgba(255,255,255,.05);border-left:3px solid #8b7bff;border-radius:12px}.nb.g1{background:rgba(124,108,255,.12)}
+.lg{border:1px dashed rgba(255,255,255,.2);border-radius:12px;background:rgba(255,255,255,.04)}
+.eq{color:#fff}.es{color:#aab2cf}
+.op{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-left:1px solid rgba(255,255,255,.12);border-radius:16px;box-shadow:none}.op:hover:not(:disabled){border-color:#b4a9ff}.ot b{color:#fff}
+/* planner (dark) */
+.a2{--bg:#0a0c16;--sf:#14172b;--s2:#1a1e38;--s3:#262b4a;--bd:rgba(255,255,255,.08);--bd2:rgba(255,255,255,.16);--tx:#eef0f8;--t2:#aab2cf;--t3:#7f89ab;--ac:#7c6cff;--acd:#b4a9ff;--acl:rgba(124,108,255,.14);--rd:20px;--rs:14px;background:transparent}
+.a2 header{background:rgba(20,23,43,.72);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.a2 nav{background:rgba(14,16,30,.86);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.a2 .cd.hl{border-color:rgba(124,108,255,.35)}
+.a2 .chip{background:rgba(251,191,36,.14);color:#fbbf24}
+.a2 .no{font:600 12px Prompt,sans-serif}
+.a2 .go{background:linear-gradient(135deg,#7c6cff,#38bdf8);border-radius:14px;box-shadow:0 12px 26px -12px rgba(124,108,255,.9);font-weight:600}
+.a2 .go:active{background:linear-gradient(135deg,#7c6cff,#38bdf8);filter:brightness(.92);transform:scale(.99)}
+.a2 .go.alt{background:var(--s3);box-shadow:none}.a2 .go[disabled]{box-shadow:none}
+.a2 .cta{background:linear-gradient(rgba(10,12,22,0),#0a0c16 42%)}
+/* school cards */
+.sch{border-radius:20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11);box-shadow:none;padding:16px}
+.sch:hover{border-color:rgba(180,169,255,.55);background:rgba(255,255,255,.08)}
+.sch:active{transform:scale(.99);box-shadow:none}
+.sch.sel{border-color:#8b7bff;background:rgba(124,108,255,.14);box-shadow:0 0 0 1px #8b7bff,0 14px 34px -16px rgba(124,108,255,.8)}
+.sch>i{border-radius:50%;background:transparent;border:2px solid rgba(255,255,255,.3)}
+.sch.sel>i{background:#8b7bff;border-color:#8b7bff;box-shadow:inset 0 0 0 3px #1c1a45}
+.sch .sn{font-weight:700}
+.pills b{border-radius:99px;background:rgba(255,255,255,.08);border:0;color:#c6cce5;padding:3px 10px}
+.sd{border-top:1px solid rgba(255,255,255,.12);color:#dfe3f4}
+/* year summary */
+.ys{background:#0a0c16;background-image:radial-gradient(700px 400px at 10% -5%,rgba(124,108,255,.18),transparent 60%)}
+.ys .kk b{color:#b4a9ff}
+.ys h2{font-weight:700}
+.ysc{border-color:rgba(255,255,255,.10)}.ysc:after{border-top:1px solid rgba(255,255,255,.28)}
+.yb i.p{background:linear-gradient(180deg,#34d399,#10b981);border-radius:7px 7px 0 0}
+.yb i.n{background:linear-gradient(0deg,#fb7185,#f43f5e);border-radius:0 0 7px 7px}
+.yb.old i{opacity:.5}
+.yk{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);border-radius:20px;padding:14px}
+.yk b{font-weight:700}.yk b.up{color:#34d399}.yk b.dn{color:#fb7185}
+.yn{width:100%;background:linear-gradient(135deg,#7c6cff,#38bdf8);color:#fff;border-radius:18px;padding:17px 24px;box-shadow:0 14px 30px -12px rgba(124,108,255,.9)}
+.yn:active{transform:scale(.98);box-shadow:0 6px 16px -10px rgba(124,108,255,.9)}
+.rfam{font:700 24px/1.3 Prompt,sans-serif;color:#fff;margin:-6px 0 20px;min-height:32px}
+.fs{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11);border-radius:18px;padding:14px 16px;margin:6px 0 10px;line-height:1.5}
+.fs b{display:block;font:700 18px Prompt,sans-serif;color:#fff}.fs span{display:block;color:#c6cce5;font-size:15px}.fs small{display:block;margin-top:4px;color:#8f9cbd;font-size:13px}
+.sch.lock{opacity:.4;cursor:not-allowed}.sch.lock:hover{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.11)}
+.yn:disabled{opacity:.5;box-shadow:none}
+.sch small em{font-style:normal;color:#fbbf24}
 </style></head><body><div id="app"></div><script>
 const A=document.getElementById('app'),K='hmd_vn',KS='hmd_set';
 let S,ST={mv:50,sv:70,ts:25},ac,mus,Q,qi,cur,iv,typing=0,ready=0;
@@ -47,7 +151,7 @@ const cl=v=>Math.max(0,Math.min(100,v)),rnd=a=>a[Math.random()*a.length|0],$=i=>
 const C=(l,t,m,f,r,lo,nd)=>[l,t,m,f,r,lo,nd];
 const has=r=>!r||(r[0]=='M'?S.money>=+r.slice(1):r[0]=='K'?S.skill>=+r.slice(1):r[0]=='L'?S.look>=+r.slice(1):r[0]=='T'?S.tier>=+r.slice(1):S.own[r]);
 const lvl=()=>S.look>=80?3:S.look>=50?2:S.look>=20?1:0;
-const toast=t=>{const d=document.createElement('div');d.textContent=t;d.style.cssText='position:fixed;top:12px;left:50%;transform:translateX(-50%);background:#E4B968;color:#263B56;padding:8px 14px;z-index:99;font-weight:600';document.body.appendChild(d);setTimeout(()=>d.remove(),1500)};
+const toast=t=>{const d=document.createElement('div');d.textContent=t;d.style.cssText='position:fixed;top:12px;left:50%;transform:translateX(-50%);background:rgba(20,23,43,.94);color:#fff;border:1px solid rgba(255,255,255,.14);border-radius:99px;padding:10px 18px;z-index:99;font-weight:600;box-shadow:0 12px 30px -10px rgba(0,0,0,.7)';document.body.appendChild(d);setTimeout(()=>d.remove(),1500)};
 const SC=[
 {id:'meet',bg:'class',fix:1,l:()=>{const T=TR[S.tier];return['N:'+T[2],'N:'+T[3]+' อีฟนั่งอ่านหนังสือล่วงหน้าอยู่คนเดียว ผมสั้นสีดำ','W:(อีฟอีกแล้วเหรอ… ไม่ว่าจะไปเรียนที่ไหนก็เจอเธอตลอดเลย)','E:อ้าว วาวา ที่นั่งข้าง ๆ ว่างอยู่นะ|happy',{c:[C('เดินไปนั่งข้าง ๆ แล้วทักตรง ๆ',2,3,'','W:สวัสดีอีฟ ขอนั่งด้วยนะ/E:นั่งเลย|happy'),C('ทักเสียงดังให้ทั้งห้องได้ยิน',-3,-4,'','W:อีฟ! คิดถึงที่สุดเลย!/E:เบา ๆ ก็ได้นะ…|surprised'),C('ถามว่าหนังสือที่เธออ่านสนุกไหม',4,4,'listened','E:สนุกมาก เดี๋ยวเล่าให้ฟังนะ|happy')]}]}},
 {id:'tier',bg:'class',d0:2,dmax:17,once:1,sp:1,l:()=>TS[S.tier]},
@@ -88,10 +192,16 @@ else if(d>=0){l.push('E:ผ่านเกณฑ์พอดีเลย อย�
 else if(d>=-10){l.push('E:ตกเกณฑ์นิดเดียว ฉันเป็นห่วงนะ|tired');c=[C('ขอให้อีฟช่วยติวและสัญญาว่าจะตั้งใจ',3,2,'honest','E:ได้ เริ่มพรุ่งนี้เลย|happy'),C('แกล้งทำเป็นไม่เป็นไร',-4,-3,'ignored','E:อืม…|tired')]}
 else{S.f.fail=F+1;l.push('N:วาวาตกเกณฑ์อย่างหนัก (คำเตือนครั้งที่ '+S.f.fail+' จาก 2)','E:ถ้าเป็นแบบนี้ต่อไป ฉันคงต้องไปติวกับคนอื่นนะ|upset');if(F==0)l.push('R:ถ้าอีฟต้องการคนติวด้วย บอกฉันได้นะ|neutral');c=[C('ขอโทษและขอโอกาสแก้ตัว',2,0,'honest','E:ฉันให้โอกาสอีกครั้งนะ|neutral'),C('โทษว่าข้อสอบยากเกินไป',-6,-6,'','E:ปัญหาไม่ได้อยู่ที่ข้อสอบนะ|upset')]}
 l.push({c});return{id:'exam',bg:'class',l}}
-function spin(cb){let i=0;ov('<h2>กำลังสุ่มฐานะ…</h2><div id=sp style="font:600 20px Prompt;text-align:center;padding:14px">🎲</div>');const v=setInterval(()=>{const e=$('sp');if(e)e.textContent=i>14?TR[S.tier][0]:TR[i%5][0];if(++i>15){clearInterval(v);setTimeout(()=>{cov();cb()},500)}},110)}
-function begin(){const pre=!!PF;S=init();PF=null;pre?begin2():spin(begin2)}
-function begin2(){let ex='';if(S.tier==2){S.skill=10+Math.random()*40|0;if(S.skill<30){S.tier=1;S.money=TR[2][4]+TR[2][5]-TR[1][5];ex='สอบเข้าโรงเรียนชื่อดังไม่ติด (คะแนน '+S.skill+' จาก 30) เลยต้องไปเรียนโรงเรียนเอกชนแทน<br>'}else ex='สอบเข้าติดแล้ว (คะแนน '+S.skill+' ผ่านเกณฑ์ 30)<br>'}save();music();const T=TR[S.tier];ov(`<h2>${T[0]}</h2>เกิดที่จังหวัด${S.prov}<br>ฐานะ: ${T[1]} (รายได้ครอบครัว ${fm(S.inc)}/เดือน)<br>${ex}ค่าเทอม ${fm(T[5])} (จ่ายแล้ว) · เงินติดตัว ${fm(S.money)}<p><small>ไม่ว่าจะเรียนที่ไหน วาวาก็ต้องเจออีฟ แต่ถ้าความรู้ตามไม่ทัน อีฟอาจไปติวกับคนอื่น</small></p><button class="btn g" onclick="cov();play(SC[0])">เข้าโรงเรียน ▶</button>`)}
-const init=()=>{const p=PF||rollPF(),t=p.tier;return{tier:t,prov:p.prov,inc:p.inc,exam:0,rv:0,news:'',slotsPen:0,money:TR[t][4],look:0,skill:[5,10,20,20,20][t],own:{},slots:2,day:1,trust:50,mood:70,f:{},hist:[],mh:[70],dl:[],t0:50,m0:70}};
+function begin(){S=init();PF=null;begin2()}
+let ADM=null;
+const BR=[0,0,5000,8e5,2e6],CUT=[0,0,70,75,80];
+function begin2(){const D=ADM||{mode:'direct'},want=S.tier;if(D.loan)S.debt=TR[want][5];
+if(D.mode=='bribe'){S.money-=BR[want];return fin2(`ยัดแป๊ะเจี๊ยะใต้โต๊ะ ${fm(BR[want])} ให้ผู้ใหญ่ในโรงเรียน เรื่องสอบเข้าเลยเงียบหายไป<br>`)}
+if(D.mode=='exam'){const sc=Math.random()*100|0,cutv=CUT[want];let i=0;ov(`<h2>กำลังประกาศผลสอบเข้า…</h2><div id=sp style="font:700 52px Prompt;text-align:center;padding:18px">??</div>`);
+const v=setInterval(()=>{const e=$('sp');if(e)e.textContent=i<14?(Math.random()*100|0):sc;if(++i>15){clearInterval(v);setTimeout(()=>{cov();let ex;if(sc>=cutv)ex=`สอบเข้า${TR[want][0]}ติด! (คะแนน ${sc} ผ่านเกณฑ์ ${cutv})<br>`;else{const fb=Math.min(S.fam??0,1);S.tier=fb;S.skill=SK0[fb];ex=`สอบเข้าไม่ติด (คะแนน ${sc} ไม่ถึงเกณฑ์ ${cutv}) ${S.debt?'สินเชื่อถูกยกเลิก ':''}เลยต้องไปเรียน${TR[fb][0]}แทน<br>`;S.debt=0}fin2(ex)},700)}},90);return}
+fin2('')}
+function fin2(ex){S.y0=snap();save();music();const T=TR[S.tier];ov(`<h2>${T[0]}</h2>เกิดที่จังหวัด${S.prov}<br>ฐานะ: ${TR[S.fam??S.tier][1]} (รายได้ครอบครัว ${fm(S.inc)}/เดือน)<br>${ex}ค่าเทอม ${fm(T[5])} (${S.debt?'กู้เงินเรียน · หนี้ '+fm(S.debt):'ครอบครัวจ่ายแล้ว'}) · เงินติดตัว ${fm(S.money)}<p><small>ไม่ว่าจะเรียนที่ไหน วาวาก็ต้องเจออีฟ แต่ถ้าความรู้ตามไม่ทัน อีฟอาจไปติวกับคนอื่น</small></p><button class="btn g" onclick="cov();play(SC[0])">เข้าโรงเรียน ▶</button>`)}
+const init=()=>{const p=PF||rollPF(),t=p.tier,sk=SK0[t],mm=p.cash??TR[t][4];return{tier:t,pick:t,fam:p.fam??t,prov:p.prov,inc:p.inc,exam:0,rv:0,news:'',slotsPen:0,money:mm,look:0,skill:sk,own:{},slots:2,day:1,trust:50,mood:70,f:{},hist:[],mh:[70],dl:[],t0:50,m0:70,y0:{money:mm,trust:50,mood:70,skill:sk,look:0},yr:[],yn:[],debt:0}};
 const save=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
 const load=()=>{try{const s=JSON.parse(localStorage.getItem(K));if(s&&typeof s.day=='number'&&s.f&&s.hist)return s}catch(e){}return null};
 const setSave=()=>{try{localStorage.setItem(KS,JSON.stringify(ST))}catch(e){}};
@@ -130,7 +240,7 @@ else{if(rr||nt){R(205,44,3,56,'#2a2a3a');R(199,41,16,4,'#f7e08c');c.globalAlpha=
 if(k=='fest'){R(0,30,240,1,'#14141c');for(let i=0;i<14;i++)R(8+i*17,31,7,9,i%2?'#e0556a':'#E4B968')}
 if(rr)for(let i=0;i<60;i++)R(rn()*240,rn()*100,1,5,'#cfe0ee');
 if(k=='sun')['0110110','1111111','1111111','0111110','0011100','0001000'].forEach((r,y)=>[...r].forEach((v,x)=>v>'0'&&R(108+x*3,20+y*3,3,3,'#e0556a')))}
-function ico(n){const m={heart:['#e0556a','0110110,1111111,1111111,0111110,0011100,0001000'],smile:['#f0c840','0111110,1111111,1011101,1111111,1011101,1100011,0111110'],book:['#5aa8f0','1111111,1211121,1211121,1211121,1211121,1111111','#e6f2ff'],gem:['#5ec4b6','1110111,0111110,0011100,0001000'],coin:['#f0b840','0011100,0111110,1121211,1112111,1121211,0111110,0011100','#b8791c']}[n],r=m[1].split(',');return`<svg viewBox="0 0 7 ${r.length}" width=18 height=${r.length*2.6} shape-rendering=crispEdges>${r.map((a,y)=>[...a].map((v,x)=>v>'0'?`<rect x=${x} y=${y} width=1 height=1 fill="${v=='2'?m[2]:m[0]}"/>`:'').join('')).join('')}</svg>`}
+function ico(n,w=18){const m={clock:['#f2ece0','0111110,1000001,1002001,1002201,1000001,0111110','#E4B968'],house:['#f0a030','0001000,0011100,0111110,1111111,0222220,0220220,0220220','#f2ece0'],pin:['#e0556a','0111110,1112111,1222221,1112111,0111110,0001000,0001000','#fff'],heart:['#e0556a','0110110,1111111,1111111,0111110,0011100,0001000'],smile:['#f0c840','0111110,1111111,1011101,1111111,1011101,1100011,0111110'],book:['#5aa8f0','1111111,1211121,1211121,1211121,1211121,1111111','#e6f2ff'],gem:['#5ec4b6','1110111,0111110,0011100,0001000'],coin:['#f0b840','0011100,0111110,1121211,1112111,1121211,0111110,0011100','#b8791c']}[n],r=m[1].split(',');return`<svg viewBox="0 0 7 ${r.length}" width=${w} height=${r.length*w/7} shape-rendering=crispEdges>${r.map((a,y)=>[...a].map((v,x)=>v>'0'?`<rect x=${x} y=${y} width=1 height=1 fill="${v=='2'?m[2]:m[0]}"/>`:'').join('')).join('')}</svg>`}
 const fm=m=>m>=1e6?'฿'+(m/1e6).toFixed(1).replace(/\.0$/,'')+' ล้าน':'฿'+Math.round(m).toLocaleString();
 const bar=(v,c)=>`<div class=bar><i style="width:${v}%;background:${c}"></i></div>`;
 function ov(h){const d=document.createElement('div');d.className='ov';d.id='ov';d.innerHTML=`<div class="pn pop">${h}</div>`;document.body.appendChild(d)}
@@ -157,22 +267,32 @@ if(f.solo)return'solo';if((f.fail||0)>=2)return'abandon';if(f.rival&&S.rv>=90)re
 if(f.offer&&d>=16&&t>=35)return f.support&&t>=70&&am>=55?'best':'odd';
 if(d>=20&&t>=85&&(f.listened||0)>=3&&am>=55&&(!f.rival||S.rv<70))return'best';if(d>=20&&t>=65&&(!f.rival||S.rv<70))return'good';if(d>=28)return t>=35?'neutral':'heart';return null}
 function pickSc(){if(S.day==1)return SC[0];if(S.exam){S.exam=0;return examSc()}const last=S.hist.slice(-4),ok=e=>(!e.d0||S.day>=e.d0)&&(!e.dmax||S.day<=e.dmax)&&(!e.f||S.f[e.f])&&(!e.nf||!S.f[e.nf])&&(!e.rvmin||S.rv>=e.rvmin)&&(!e.lk||S.look>=e.lk)&&(!e.sk||S.skill>=e.sk)&&(!e.own||(e.own=='*'?Object.keys(S.own).length:S.own[e.own]))&&!(e.once&&S.hist.includes(e.id))&&!e.fix;let p=SC.filter(e=>ok(e)&&!last.includes(e.id));const sp=p.filter(e=>e.sp);if(sp.length&&Math.random()<.4)return rnd(sp);p=p.filter(e=>!e.sp);if(!p.length)p=SC.filter(e=>ok(e)&&!e.sp);return rnd(p)}
-function nextDay(){const k=endCheck();if(k=='heart')return play(BRK);if(k=='abandon')return play(BRK3);if(k=='left')return play(BRK2);if(k)return ending(k);S.day++;S.exam=S.day%5==0?1:0;if(S.f.rival)S.rv=cl(S.rv+3);S.news='';if(Math.random()<.55){const e=rnd(RAND);e[1]();S.news=e[0]}S.mood=cl(S.mood+(S.mood>60?-3:3));S.t0=S.trust;S.m0=S.mood;save();evGate();if(S.day==18)ov('<h2>ผ่านไปหลายปี…</h2>วาวากับอีฟเรียนจบ ก้าวเข้าสู่วัยทำงาน เปลี่ยนจากชุดนักเรียนเป็นชุดทำงาน<button class=btn onclick=cov()>ต่อไป</button>')}
+function nextDay(){const k=endCheck();if(k=='heart')return play(BRK);if(k=='abandon')return play(BRK3);if(k=='left')return play(BRK2);if(k)return ending(k);const a0=age();S.day++;const Y=age()!=a0?closeYear(a0):null;S.exam=S.day%5==0?1:0;if(S.f.rival)S.rv=cl(S.rv+3);S.news='';if(Math.random()<.55){const e=rnd(RAND);e[1]();S.news=e[0];(S.yn=S.yn||[]).push(e[0])}S.mood=cl(S.mood+(S.mood>60?-3:3));S.t0=S.trust;S.m0=S.mood;save();Y?yearSum(Y):yGate()}
+function yGate(){evGate();if(S.day==18)ov('<h2>ผ่านไปหลายปี…</h2>วาวากับอีฟเรียนจบ ก้าวเข้าสู่วัยทำงาน เปลี่ยนจากชุดนักเรียนเป็นชุดทำงาน<button class=btn onclick=cov()>ต่อไป</button>')}
 function ending(k){const E=END[k];music(['heart','left'].includes(k)?[220,196,175,165]:SCE);try{localStorage.removeItem(K)}catch(e){}
 stage(E[2],['heart','left'].includes(k)?'upset':'happy',['heart','left'].includes(k)?'upset':'happy');$('nm').style.display='none';$('tx').textContent=E[0];
-ov(`<h2>${E[0]}</h2>${E[1]}<p>${TR[S.tier][0]}${S.prov?' · จ.'+S.prov:''} · ผ่านมา <b>${S.day}</b> วัน · ไว้ใจ ${S.trust} · อารมณ์อีฟ ${S.mood}<br>เหตุการณ์ที่ผ่าน ${S.hist.length} เรื่อง<br>เงิน ${fm(S.money)} · ความสวย ${S.look}/100 · ความรู้ ${S.skill}/100<br>ทรัพย์สิน: ${Object.keys(S.own).map(k=>AS[k][2]+AS[k][0]).join(' ')||'ไม่มี'}</p><button class="btn g" onclick="cov();begin()">เล่นอีกครั้ง</button><button class=btn onclick="cov();menu()">กลับเมนูหลัก</button>`)}
+ov(`<h2>${E[0]}</h2>${E[1]}<p>${TR[S.tier][0]}${S.prov?' · จ.'+S.prov:''} · ผ่านมา <b>${S.day}</b> วัน · ไว้ใจ ${S.trust} · อารมณ์อีฟ ${S.mood}<br>เหตุการณ์ที่ผ่าน ${S.hist.length} เรื่อง<br>เงิน ${fm(S.money)}${S.debt?' · หนี้ '+fm(S.debt):''} · ความสวย ${S.look}/100 · ความรู้ ${S.skill}/100<br>ทรัพย์สิน: ${Object.keys(S.own).map(k=>AS[k][2]+AS[k][0]).join(' ')||'ไม่มี'}</p><button class="btn g" onclick="cov();RB=0;rollPage()">เกิดใหม่อีกครั้ง</button><button class=btn onclick="cov();menu()">กลับเมนูหลัก</button>`)}
 function hist(){ov(`<h2>บันทึกสนทนา</h2>${S.dl.map(x=>`<div>${x}</div>`).join('')||'ยังไม่มีบทสนทนา'}<button class=btn style="margin-top:10px" onclick=cov()>ปิด</button>`)}
 function pause(){ov(`<h2>เมนู</h2>เพลง <input type=range min=0 max=100 value=${ST.mv} oninput="ST.mv=+this.value;setSave()">เสียงเอฟเฟกต์ <input type=range min=0 max=100 value=${ST.sv} oninput="ST.sv=+this.value;setSave();beep(600)">ความเร็วข้อความ (ช้า→เร็ว) <input type=range min=5 max=60 value=${65-ST.ts} oninput="ST.ts=65-this.value;setSave()"><button class=btn onclick="cov();hist()">📖 บันทึกสนทนา</button><button class=btn onclick="save();cov()">💾 บันทึกและเล่นต่อ</button><button class=btn onclick="save();cov();menu()">กลับเมนูหลัก</button><button class=btn onclick="if(confirm('ลบความคืบหน้าทั้งหมด?')){localStorage.removeItem(K);cov();S=init();menu()}">🗑 รีเซ็ตความคืบหน้า</button>`)}
 const AS={phone:['โทรศัพท์รุ่นใหม่',2500,'📱','เปิดตัวเลือกใหม่ในบางฉาก'],bike:['จักรยาน',3500,'🚲','ปั่นไปรับ-ส่งอีฟได้'],tablet:['แท็บเล็ตเรียนหนังสือ',8000,'📲','อ่านทบทวนได้ผลขึ้น (+10) และเปิดฉากชวนอีฟติวที่บ้าน']};
 const up=(k,v)=>{S[k]=Math.min(100,S[k]+v)};
 const ACT=[['ทำงานพิเศษหลังเลิกเรียน','ได้ ฿300 (มีโอกาสได้โบนัส)',0,0,()=>{const r=300+(Math.random()<.2?100:0);S.money+=r;return'ได้ ฿'+r}],['ติวเด็กรุ่นน้อง','ต้องมีความรู้ 30 · ได้ ฿800',0,30,()=>{S.money+=800;return'ได้ ฿800'}],['จ้างติวเตอร์พิเศษ','฿300 · ความรู้ +10',300,0,()=>{up('skill',10);return'ความรู้ +10'}],['อ่านหนังสือทบทวน','ฟรี · ความรู้ +5 (มีแท็บเล็ต +10)',0,0,()=>{const v=S.own.tablet?10:5;up('skill',v);return'ความรู้ +'+v}],['ดูแลผิวและทำผม','฿400 · ความสวย +10',400,0,()=>{up('look',10);return'ความสวย +10'}],['ซื้อเสื้อผ้าใหม่','฿800 · ความสวย +15',800,0,()=>{up('look',15);return'ความสวย +15'}],['แอบส่องโซเชียลอีฟ','รู้ว่าคู่แข่งใกล้ชิดแค่ไหน แต่ไว้ใจลด 2',0,0,()=>{S.trust=cl(S.trust-2);return S.f.rival?`คู่แข่งใกล้ชิดอีฟ ${S.rv}%`:'ยังไม่มีใครน่าสงสัย'}],['ออกกำลังกาย','ฟรี · ความสวย +5',0,0,()=>{up('look',5);return'ความสวย +5'}]];
 function plan(){S.slots=2-(S.slotsPen||0);S.slotsPen=0;planUI()}
-function planUI(){A.innerHTML=`<div class=two><div class=stage style="height:36dvh;min-height:240px"><canvas class=bg id=bg></canvas><canvas class=ch id=cw style="left:50%;transform:translateX(-50%);height:100%;bottom:0"></canvas></div><div><h2>วันที่ ${S.day} · อายุ ${age()} · วางแผนก่อนไป${S.day>=18?'ทำงาน':'โรงเรียน'}</h2><div class=card>${TR[S.tier][0]}${S.prov?' · จ.'+S.prov:''}<br>${fm(S.money)} · ความสวย ${S.look}/100 · ความรู้ ${S.skill}/100<br>ไว้ใจ ${S.trust} · อารมณ์อีฟ ${S.mood}<br>ทรัพย์สิน: ${Object.keys(S.own).map(k=>AS[k][2]+AS[k][0]).join(' ')||'ยังไม่มี'}<br>ช่วงเวลาที่เหลือ: ${S.slots}<br>เกณฑ์ความรู้ตอนนี้ ${need()} · สอบทุก 5 วัน · คำเตือนจากอีฟ ${S.f.fail||0}/2</div>${S.news?`<div class=card>📰 ${S.news}</div>`:''}${ACT.map((x,i)=>`<button class=btn ${S.slots<1||S.money<x[2]||S.skill<x[3]?'disabled':''} onclick=doAct(${i})>${x[0]}<small>${x[1]}</small></button>`).join('')}<button class=btn onclick=assets()>🏬 ร้านทรัพย์สิน (ไม่ใช้ช่วงเวลา)</button><button class=btn onclick="if(confirm('เลือกโสดและจบเกมตอนนี้?')){S.f.solo=1;ending('solo')}">🕊 เลือกโสด จบเกม</button><button class="btn g" onclick="play(pickSc())">ไปพบอีฟ ▶</button><button class=btn onclick=pause()>☰ เมนู</button></div></div>`;bgArt($('bg'),'room');bust($('cw'),'W','happy',lvl())}
+let TAB='t0';
+const stt=(n,v,c)=>`<div class=st><span>${n}</span><u><b style="width:${v}%;background:${c}"></b></u><span>${Math.round(v)}</span></div>`;
+function shell(top,inner,tabs){return`<div class=a2><header><small>${top[0]}</small><b>${top[1]}</b></header>${tabs?`<nav>${[['t0','วันนี้'],['t1','สถานะ'],['t2','ร้านค้า'],['t3','บันทึก']].map(([k,n])=>`<button class="${TAB==k?'on':''}" onclick="TAB='${k}';planUI()">${n}</button>`).join('')}</nav>`:''}${inner}</div>`}
+function planUI(){const T=TR[S.tier];let h='';
+if(TAB=='t0'){const G=[['💼','หาเงิน',[0,1]],['📚','เรียนรู้',[3,2]],['✨','ดูแลตัวเอง',[4,5,7]],['🔎','อื่น ๆ',[6]]];
+h=`<div class=cd><b>ช่วงเวลาที่เหลือ ${S.slots}</b> · ${fm(S.money)}<br><small>เกณฑ์ความรู้ตอนนี้ ${need()} · สอบทุก 5 วัน · คำเตือนจากอีฟ ${S.f.fail||0}/2</small></div>${S.news?`<div class="cd hl">📰 ${S.news}</div>`:''}`+G.map(g=>`<div class=gh>${g[0]} ${g[1]}</div>`+g[2].map(i=>{const x=ACT[i],no=S.slots<1||S.money<x[2]||S.skill<x[3];return`<details name=act><summary>${x[0]}${x[2]?`<span class=chip>${fm(x[2])}</span>`:''}<i>▾</i></summary><div class=dbd>${x[1]}<button class=go ${no?'disabled':''} onclick=doAct(${i})>${no?'ทำไม่ได้ตอนนี้':'ทำเลย'}</button></div></details>`}).join('')).join('')+`<div class=cta><button class=go onclick="play(pickSc())">${S.day>=18?'ไปทำงาน':'ไปโรงเรียน'} ▶</button></div>`}
+else if(TAB=='t1'){h=`<div class=cd>${stt('ไว้ใจ',S.trust,'#e8507a')}${stt('อารมณ์อีฟ',S.mood,'#c97d10')}${stt('ความรู้',S.skill,'#4a90d9')}${stt('ความสวย',S.look,'#5a9e20')}</div><div class=cd><b>${T[0]}</b><br>เกิดที่ จ.${S.prov||'-'} · ${TR[S.fam??S.tier][1]}<br>รายได้ครอบครัว ${fm(S.inc||0)}/เดือน · ค่าเทอม ${fm(T[5])}${S.debt?'<br>หนี้กู้เรียน '+fm(S.debt):''}<br>ทรัพย์สิน: ${Object.keys(S.own).map(k=>AS[k][2]+AS[k][0]).join(' ')||'ยังไม่มี'}</div><div style="margin:12px"><button class="go alt" onclick=pause()>☰ เมนู / ตั้งค่า</button><button class=go style="background:var(--s3);color:var(--tx)" onclick="if(confirm('เลือกโสดและจบเกมตอนนี้?')){S.f.solo=1;ending('solo')}">🕊 เลือกเดินทางคนเดียว จบเกม</button></div>`}
+else if(TAB=='t2'){h=`<div class=cd>${fm(S.money)} · ทรัพย์สินเปิดทางเลือกใหม่ แต่ซื้อใจใครไม่ได้</div>`+Object.entries(AS).map(([k,v])=>`<details name=sh><summary>${v[2]} ${v[0]}<span class=chip>${fm(v[1])}</span><i>▾</i></summary><div class=dbd>${v[3]}<button class=go ${S.own[k]||S.money<v[1]?'disabled':''} onclick="buyA('${k}')">${S.own[k]?'มีแล้ว':S.money<v[1]?'เงินไม่พอ':'ซื้อ'}</button></div></details>`).join('')}
+else h=`<div class=cd>${S.dl.slice(-30).reverse().map(x=>`<div style="padding:5px 0;border-bottom:1px solid var(--bd);font-size:14px">${x}</div>`).join('')||'ยังไม่มีบทสนทนา'}</div>`;
+A.innerHTML=shell([`วันที่ ${S.day} · อายุ ${age()}`,`${T[0]}${S.prov?' · จ.'+S.prov:''}`],h,1)}
 function doAct(i){const x=ACT[i];if(S.slots<1||S.money<x[2]||S.skill<x[3])return;S.money-=x[2];S.slots--;toast(x[4]());beep(880,.12,'triangle');save();planUI()}
 function assets(){ov(`<h2>ร้านทรัพย์สิน</h2><small>${fm(S.money)} · ทรัพย์สินเปิดทางเลือกใหม่ แต่ซื้อใจใครไม่ได้</small>${Object.entries(AS).map(([k,v])=>`<div class=card>${v[2]} <b>${v[0]}</b> ฿${v[1]}<small>${v[3]}</small><button class=btn ${S.own[k]||S.money<v[1]?'disabled':''} onclick="buyA('${k}')">${S.own[k]?'มีแล้ว':'ซื้อ'}</button></div>`).join('')}<button class=btn onclick=cov()>ปิด</button>`)}
-function buyA(k){S.money-=AS[k][1];S.own[k]=1;beep(990,.15,'triangle');save();cov();planUI();assets()}
+function buyA(k){S.money-=AS[k][1];S.own[k]=1;beep(990,.15,'triangle');save();TAB='t2';planUI()}
 let PF=null;const PV='กรุงเทพมหานคร กระบี่ กาญจนบุรี กาฬสินธุ์ กำแพงเพชร ขอนแก่น จันทบุรี ฉะเชิงเทรา ชลบุรี ชัยนาท ชัยภูมิ ชุมพร เชียงราย เชียงใหม่ ตรัง ตราด ตาก นครนายก นครปฐม นครพนม นครราชสีมา นครศรีธรรมราช นครสวรรค์ นนทบุรี นราธิวาส น่าน บึงกาฬ บุรีรัมย์ ปทุมธานี ประจวบคีรีขันธ์ ปราจีนบุรี ปัตตานี พระนครศรีอยุธยา พะเยา พังงา พัทลุง พิจิตร พิษณุโลก เพชรบุรี เพชรบูรณ์ แพร่ ภูเก็ต มหาสารคาม มุกดาหาร แม่ฮ่องสอน ยโสธร ยะลา ร้อยเอ็ด ระนอง ระยอง ราชบุรี ลพบุรี ลำปาง ลำพูน เลย ศรีสะเกษ สกลนคร สงขลา สตูล สมุทรปราการ สมุทรสงคราม สมุทรสาคร สระแก้ว สระบุรี สิงห์บุรี สุโขทัย สุพรรณบุรี สุราษฎร์ธานี สุรินทร์ หนองคาย หนองบัวลำภู อ่างทอง อำนาจเจริญ อุดรธานี อุตรดิตถ์ อุทัยธานี อุบลราชธานี'.split(' '),INC=[[8e3,15e3],[30e3,60e3],[70e3,150e3],[300e3,800e3],[1e6,3e6]];
-const age=()=>S.day<=17?15+((S.day-1)/6|0):18+(((S.day-18)/4)|0),fk=n=>n>=1e6?n/1e6+'M':n>=1e3?n/1e3+'K':n;
+const SK0=[5,10,20,20,20],ageOf=d=>d<=17?15+((d-1)/6|0):18+(((d-18)/4)|0),age=()=>ageOf(S.day),fk=n=>n>=1e6?n/1e6+'M':n>=1e3?n/1e3+'K':n;
 const EVS=[
 {id:'track',d:2,k:'ทางแยก',nr:'ครูประจำชั้นแจกใบเลือกสายการเรียนให้ทั้งห้อง อีฟกำลังก้มกรอกเงียบ ๆ',q:'จะเลือกสายไหน',sub:'ไม่มีถูกผิด แต่ใช้เวลาและแรงไม่เท่ากัน',ops:[{t:'วิทย์-คณิต',d:'ความรู้ +10 · อารมณ์ -3',w:{skill:10,mood:-3},wt:'โจทย์ยากขึ้น แต่เริ่มเห็นภาพรวมของวิชา'},{t:'ศิลป์-ภาษา',d:'ความรู้ +6 · อารมณ์ +3',w:{skill:6,mood:3},wt:'ได้อ่านเรื่องที่ชอบ เรียนแล้วยิ้มได้'},{t:'ทำงานพิเศษคู่กับเรียน',d:'ได้ ฿1,000 · ความรู้ +3',w:{money:1000,skill:3},wt:'เหนื่อยหน่อย แต่กระเป๋าเงินหนาขึ้น'}]},
 {id:'cram',d:9,k:'จุดพลิกผัน',hl:['⚡ เพื่อนชวนเรียนพิเศษ','เพื่อนในห้องเริ่มติวกันหนัก ใบปลิวคอร์สเต็มโต๊ะ'],q:'จะลงติวไหม',sub:'คอร์สแพงไม่ได้การันตีว่าจะเข้าใจ',ops:[{t:'สมัครคอร์สติวเข้ม',d:'70% ความรู้ +15',c:6000,p:.7,w:{skill:15},wt:'ติวแล้วเข้าใจเยอะ คะแนนเริ่มขยับ',l:{skill:4,mood:-3},lt:'ตามครูติวไม่ทัน ได้แค่นิดหน่อย'},{t:'อ่านเองกับอีฟที่ห้องสมุด',d:'ฟรี · ความรู้ +5 · ไว้ใจ +3',w:{skill:5,trust:3},wt:'นั่งอ่านข้างกันจนห้องสมุดปิด'},{t:'พักก่อน',d:'อารมณ์ +5',w:{mood:5},wt:'นอนเต็มอิ่ม แต่ใบปลิวยังอยู่บนโต๊ะ'}]},
@@ -181,16 +301,48 @@ const EVS=[
 {id:'vote',d:22,k:'เลือกตั้ง',nr:'ป้ายหาเสียงเต็มเสาไฟทั้งถนน อีฟส่งข้อความมาถามว่าวาวาจะไปหน่วยไหน',q:'วันเลือกตั้งทั่วไป',sub:'พรรคและนโยบายทั้งหมดในเกมเป็นเรื่องสมมติ',ops:[{t:'พรรคอิ่มท้อง',d:'แจกเงินเข้ากระเป๋า ขึ้นค่าแรงขั้นต่ำ',w:{money:2000,mood:3},wt:'เงินเข้ากระเป๋าตามสัญญา'},{t:'พรรคเงินสะพัด',d:'ลดภาษีธุรกิจ ดึงทุนต่างชาติ',w:{money:1000,skill:5},wt:'มีงานและคอร์สใหม่ ๆ เปิดขึ้น'},{t:'พรรคกระจกใส',d:'ปราบโกง กระจายงบลงท้องถิ่น เพิ่มสวัสดิการ',w:{mood:5,skill:3},wt:'ห้องสมุดและศูนย์เรียนรู้ในท้องถิ่นได้งบเพิ่ม'},{t:'พรรครักษ์ระเบียบ',d:'รักษาความสงบ ดูแลข้าราชการ คุมราคาสินค้า',w:{money:1500,trust:2},wt:'ราคาของกินของใช้นิ่งขึ้น'},{t:'ไม่ไปเลือกตั้ง',d:'ไม่มีผล'}]},
 {id:'biz',d:26,k:'จุดพลิกผัน',hl:['⚡ เพื่อนชวนขายของออนไลน์','เพื่อนเก่าเสนอให้ลงขันสต็อกสินค้ากันคนละก้อน'],q:'จะลงทุนไหม',sub:'กำไรดีหรือขาดทุน ไม่มีใครรับประกัน',ops:[{t:'ลงขัน ฿5K',d:'50% ได้เงินเพิ่ม',c:5000,p:.5,w:{money:15000,mood:5},wt:'ของขายหมดเกลี้ยง ได้กำไรเกินคาด',l:{mood:-3},lt:'ขายไม่ออก ของค้างสต็อก'},{t:'ไม่ลงทุน',d:'ไม่มีผล'}]}];
 const EL={skill:'ความรู้',look:'ความสวย',trust:'ไว้ใจ',mood:'อารมณ์',money:'เงิน'};
-function evHead(e){const a=age();return`<div class=hd><b>${e.k}</b>${a<=15?'ม.4':a==16?'ม.5':a==17?'ม.6':'หลังจบ ม.6'} · อายุ ${a}</div>`}
-function lifeEv(e){A.innerHTML=`<div class=evw>${evHead(e)}${e.hl?`<div class='nb g1'><b>${e.hl[0]}</b><br>${e.hl[1]}</div>`:''}${e.nr?`<div class=nb>${e.nr}</div>`:''}${e.lg?`<div class=lg>▸ ${e.lg}</div>`:''}<h2 class=eq>${e.q}</h2><p class=es>${e.sub}</p>${e.ops.map((o,i)=>{const no=S.money<(o.c||0);return`<button class=op ${no?'disabled':''} onclick="evPick('${e.id}',${i})"><span class=on>${i+1}</span><span class=ot><b>${o.t}</b><small>${o.d}${no?' · เงินไม่พอ':''}</small></span>${o.c?`<span class=oc>จ่าย<br>${ico('coin')} ${fk(o.c)}</span>`:''}</button>`}).join('')}</div>`;window.scrollTo(0,0)}
-function evPick(id,i){const e=EVS.find(x=>x.id==id),o=e.ops[i];S.money-=o.c||0;const ok=o.p==null||Math.random()<o.p,ef=(ok?o.w:o.l)||{},sm=[];for(const k in ef){const v=ef[k];if(k=='money')S.money=Math.max(0,S.money+v);else S[k]=cl(S[k]+v);sm.push(EL[k]+' '+(v>=0?'+':'')+(k=='money'?fm(Math.abs(v)).replace('฿',v<0?'-฿':'฿'):v))}if(o.c)sm.unshift('จ่าย '+fm(o.c));S.evd=S.evd||{};S.evd[id]=1;save();
-A.innerHTML=`<div class=evw>${evHead(e)}<div class='nb g1'><b>${o.t}</b><br>${(ok?o.wt:o.lt)||'ไม่มีอะไรเปลี่ยนไป'}</div><div class=lg>▸ ${sm.join(' · ')||'ไม่มีผลต่อค่าสถานะ'}</div><button class='btn g' onclick=evGate()>ต่อไป ▶</button></div>`}
-function evGate(){const e=EVS.find(x=>S.day>=x.d&&!(S.evd||{})[x.id]);e?lifeEv(e):plan()}
-function rollPF(){const r=Math.random(),t=r<.25?0:r<.55?1:r<.75?2:r<.9?3:4,g=INC[t];return{tier:t,prov:rnd(PV),inc:Math.round((g[0]+Math.random()*(g[1]-g[0]))/1000)*1000}}
-const pfHTML=()=>PF?`<b>เกิดที่จังหวัด${PF.prov}</b><br>ฐานะครอบครัว: ${TR[PF.tier][1]}<br>รายได้ครอบครัว ${fm(PF.inc)}/เดือน<br>โรงเรียนที่จะได้เข้า: ${TR[PF.tier][0]}`:'ยังไม่ได้สุ่ม กดสุ่ม หรือกดเริ่มเกมแล้วระบบจะสุ่มให้';
-function rollMenu(){let i=0;const e=$('pf'),b=$('rb');b.disabled=true;const v=setInterval(()=>{if(i++<14)e.textContent='🎲 '+rnd(PV)+' · '+TR[i%5][1];else{clearInterval(v);PF=rollPF();e.innerHTML=pfHTML();b.disabled=false}},100)}
-function menu(){S=S||init();const has=!!load();A.innerHTML=`<h1>HOW MANY<br>DAYS?</h1><div class=stage style="height:58dvh;min-height:360px"><canvas class=bg id=bg></canvas><canvas class=ch id=cw style="left:50%;transform:translateX(-50%);height:90%;bottom:0"></canvas></div><div class=card id=pf>${pfHTML()}</div><button class=btn id=rb onclick=rollMenu()>🎲 สุ่มการเงินครอบครัวและจังหวัดที่เกิด</button><button class=btn onclick=newG()>เริ่มเกมใหม่</button><button class=btn ${has?'':'disabled'} onclick=cont()>เล่นต่อ</button><button class=btn onclick=pause()>ตั้งค่า</button><button class=btn onclick="ov('<h2>เครดิต</h2>ภาพและเสียงทั้งหมดสร้างด้วย canvas และ WebAudio ไม่ใช้ไฟล์ภายนอก<br>เกมนี้เล่าว่า ความใส่ใจต้องเคารพความรู้สึกและขอบเขตของอีกฝ่ายเสมอ<button class=btn onclick=cov()>ปิด</button>')">เครดิต</button>`;bgArt($('bg'),'night');bust($('cw'),'W','happy',0,0)}
-function newG(){if(load()&&!confirm('มีเซฟอยู่แล้ว เริ่มใหม่จะเขียนทับ ต้องการเริ่มใหม่ไหม?'))return;begin()}
-function cont(){const s=load();if(!s){alert('เซฟเสียหายหรือไม่มี');return menu()}S=Object.assign(init(),s);S.day>1?plan():play(pickSc())}
+function evHead(e){const a=age();return[e.k,(a<=15?'ม.4':a==16?'ม.5':a==17?'ม.6':'หลังจบ ม.6')+' · อายุ '+a]}
+function lifeEv(e){A.innerHTML=shell(evHead(e),`${e.hl?`<div class="cd hl"><b>${e.hl[0]}</b><br>${e.hl[1]}</div>`:''}${e.nr?`<div class=cd>${e.nr}</div>`:''}${e.lg?`<div class="cd ds">▸ ${e.lg}</div>`:''}<h2 class=q>${e.q}</h2><p class=sb>${e.sub}</p>${e.ops.map((o,i)=>{const no=S.money<(o.c||0);return`<details name=ev><summary><span class=no>${i+1}</span>${o.t}${o.c?`<span class=chip>${ico('coin')} ${fk(o.c)}</span>`:''}<i>▾</i></summary><div class=dbd>${o.d}${no?' · เงินไม่พอ':''}<button class=go ${no?'disabled':''} onclick="evPick('${e.id}',${i})">เลือกข้อนี้</button></div></details>`}).join('')}`,0);window.scrollTo(0,0)}
+function evPick(id,i){const e=EVS.find(x=>x.id==id),o=e.ops[i];S.money-=o.c||0;const ok=o.p==null||Math.random()<o.p,ef=(ok?o.w:o.l)||{},sm=[];for(const k in ef){const v=ef[k];if(k=='money')S.money=Math.max(0,S.money+v);else S[k]=cl(S[k]+v);sm.push(EL[k]+' '+(v>=0?'+':'-')+(k=='money'?fm(Math.abs(v)):Math.abs(v)))}if(o.c)sm.unshift('จ่าย '+fm(o.c));S.evd=S.evd||{};S.evd[id]=1;if(id=='vote')S.vote=o.t;save();
+A.innerHTML=shell(evHead(e),`<div class="cd hl"><b>${o.t}</b><br>${(ok?o.wt:o.lt)||'ไม่มีอะไรเปลี่ยนไป'}</div><div class="cd ds">▸ ${sm.join(' · ')||'ไม่มีผลต่อค่าสถานะ'}</div><div class=cta><button class=go onclick=evGate()>ต่อไป ▶</button></div>`,0)}
+function evGate(){const e=EVS.find(x=>S.day>=x.d&&!(S.evd||{})[x.id]);e?lifeEv(e):(TAB='t0',plan())}
+let SEL=null;
+const CASH=[[100,600,50],[1500,6000,500],[3000,10000,500],[8e5,25e5,5e4],[12e5,4e6,1e5]];
+function rollPF(t){if(t==null){const r=Math.random();t=r<.25?0:r<.55?1:r<.75?2:r<.9?3:4}const g=INC[t],c=CASH[t];return{tier:t,fam:t,prov:rnd(PV),inc:Math.round((g[0]+Math.random()*(g[1]-g[0]))/1000)*1000,cash:Math.round((c[0]+Math.random()*(c[1]-c[0]))/c[2])*c[2]}}
+let FAM=null;
+const TH=[0,0,5,10,10];
+const schHTML=()=>TR.map((T,t)=>{const ln=FAM&&t>FAM.tier;return`<button class="sch${SEL===t?' sel':''}" role=radio aria-checked=${SEL===t} onclick=pickSch(${t})><i></i><span><span class=sn>${T[0]}</span><small>ค่าเทอม ${fm(T[5])}${ln?' · <em>ต้องกู้เงินเรียน</em>':''}</small><span class=pills><b>ความรู้เริ่มต้น ${SK0[t]}</b><b>${TH[t]?'เกณฑ์ผ่านสอบ +'+TH[t]:'เกณฑ์ผ่านสอบปกติ'}</b>${t>=2?'<b>สอบเข้า ติดราว '+(100-CUT[t])+'%</b><b>รับแป๊ะเจี๊ยะ</b>':''}</span>${SEL===t?`<span class=sd>${T[2]}</span>`:''}</span></button>`}).join('');
+let MODE='exam';
+const adHTML=()=>{if(SEL==null)return'';const t=SEL,ln=t>FAM.tier,br=BR[t],can=FAM.cash>=br;return`<div class=fs><b>วิธีเข้าเรียน</b>${ln?`<span>กู้เงินเรียน ${fm(TR[t][5])} · ดอกเบี้ย 5%/ปี หักจากเงินเก็บปีละ 20% ของยอดหนี้ ถ้าเงินไม่พอหนี้จะพอกขึ้น</span>`:`<span>ครอบครัวจ่ายค่าเทอม ${fm(TR[t][5])} ให้</span>`}</div>`+(t>=2?`<button class="sch${MODE=='exam'?' sel':''}" onclick="MODE='exam';pickSch(${t},1)"><i></i><span><span class=sn>สอบเข้า</span><small>สุ่มคะแนน 0–100 ต้องได้ ${CUT[t]} ขึ้นไป (ติดราว ${100-CUT[t]}%) ถ้าไม่ติดต้องไปเรียน${TR[Math.min(FAM.tier,1)][0]}แทน</small></span></button><button class="sch${MODE=='bribe'?' sel':''}" ${can?'':'disabled'} onclick="MODE='bribe';pickSch(${t},1)"><i></i><span><span class=sn>ยัดแป๊ะเจี๊ยะใต้โต๊ะ ${fm(br)}</span><small>ติดแน่นอน จ่ายจากเงินติดตัว${can?'':' · เงินติดตัวไม่พอ'}</small></span></button>`:'')};
+const startLb=()=>SEL==null?'เลือกโรงเรียนก่อนเริ่มเกม':'เริ่มเกมที่'+TR[SEL][0]+' ▶';
+function pickSch(t,k){if(!k)MODE='exam';SEL=t;$('sl').innerHTML=schHTML();$('ad').innerHTML=adHTML();const b=$('gs');b.disabled=false;b.textContent=startLb()}
+function menu(){S=S||init();const sv=load();A.innerHTML=`<h1>REBORN TO<br>WIN EVE</h1><div class=stage style="height:58dvh;min-height:360px"><canvas class=bg id=bg></canvas><canvas class=ch id=cw style="left:50%;transform:translateX(-50%);height:90%;bottom:0"></canvas></div><button class="btn g" onclick="RB=0;rollPage()">เริ่มเกมใหม่</button><button class=btn ${sv?'':'disabled'} onclick=cont()>เล่นต่อ${sv?`<small>${TR[sv.tier][0]} · อายุ ${ageOf(sv.day)} · ${fm(sv.money)}</small>`:''}</button><button class=btn onclick=pause()>ตั้งค่า</button><button class=btn onclick="ov('<h2>เครดิต</h2>ภาพและเสียงทั้งหมดสร้างด้วย canvas และ WebAudio ไม่ใช้ไฟล์ภายนอก<br>เกมนี้เล่าว่า ความใส่ใจต้องเคารพความรู้สึกและขอบเขตของอีกฝ่ายเสมอ<button class=btn onclick=cov()>ปิด</button>')">เครดิต</button>`;bgArt($('bg'),'night');bust($('cw'),'W','happy',0,0)}
+function schoolPage(){FAM=FAM||rollPF();SEL=null;A.innerHTML=`<h1 style="font-size:18px">เลือกโรงเรียน<br>ของวาวา</h1><div class=fs><b>${TR[FAM.tier][1]}</b><span>เงินติดตัว ${fm(FAM.cash)} · รายได้บ้าน ${kf(FAM.inc)}/เดือน</span><small>โรงเรียนที่เกินฐานะต้องกู้เงินเรียน · โรงเรียนชื่อดังต้องสอบเข้า หรือยัดแป๊ะเจี๊ยะ</small></div><div id=sl role=radiogroup aria-label="เลือกโรงเรียน">${schHTML()}</div><div id=ad></div><button class="btn g" id=gs onclick=startG() disabled>${startLb()}</button><button class=btn onclick=askRebirth()>ไม่พอใจ? อยากเกิดใหม่</button>`;window.scrollTo(0,0)}
+let RB=0;
+function rollPage(){FAM=rollPF();let i=0;A.innerHTML=`<div class=ys><div class=kk><b>ขั้นที่ 1</b>เกิดใหม่${RB?' · เกิดใหม่แล้ว '+RB+' ครั้ง':''}</div><h2 id=rh>🎲 กำลังเกิดใหม่…</h2><div class=rfam id=rf>&nbsp;</div><div class=y3 id=rt style="grid-template-columns:1fr 1fr"></div><button class=yn id=rn disabled onclick=schoolPage()>กำลังสุ่มชะตา…</button><button class=btn id=rr disabled style="margin-top:14px" onclick=askRebirth()>ไม่พอใจ? อยากเกิดใหม่</button></div>`;window.scrollTo(0,0);
+const v=setInterval(()=>{if(i++<16){$('rh').textContent='🎲 จังหวัด'+rnd(PV);$('rf').textContent=TR[i%5][1];beep(300+i*25,.04,'square',.05)}else{clearInterval(v);$('rh').textContent='ชาตินี้เกิดที่จังหวัด'+FAM.prov;$('rf').textContent=TR[FAM.tier][1];$('rt').innerHTML=`<div class="yk pop"><div class=yh>${ico('coin',26)}<span>เงินติดตัว</span></div><b>${fm(FAM.cash)}</b></div><div class="yk pop"><div class=yh>${ico('house',26)}<span>รายได้บ้าน/เดือน</span></div><b>${kf(FAM.inc)}</b></div>`;$('rn').disabled=false;$('rn').textContent='ยอมรับชีวิตนี้ · เลือกโรงเรียน ▶';$('rr').disabled=false;beep(880,.12,'triangle')}},100)}
+function askRebirth(){ov(`<h2>อยากเกิดใหม่จริงเหรอ?</h2><p>ชีวิตนี้จะหายไป (${TR[FAM.tier][1]} · เงินติดตัว ${fm(FAM.cash)}) และสุ่มใหม่ได้ไม่ย้อนกลับ ผลใหม่อาจดีหรือแย่กว่าเดิมก็ได้</p><button class="btn g" onclick="cov();RB++;rollPage()">เกิดใหม่เลย</button><button class=btn onclick=cov()>ใช้ชีวิตนี้ต่อ</button>`)}
+function startG(){if(SEL==null)return;const t=SEL,ln=t>FAM.tier,md=t>=2?MODE:'direct';if(!ln&&t<2)return goG();
+ov(`<h2>ยืนยันการเข้าเรียน</h2><p><b>${TR[t][0]}</b><br>${ln?'กู้เงินเรียน '+fm(TR[t][5])+' (ดอกเบี้ย 5%/ปี)':'ครอบครัวจ่ายค่าเทอม '+fm(TR[t][5])}<br>${md=='bribe'?'ยัดแป๊ะเจี๊ยะ '+fm(BR[t])+' ติดแน่นอน':md=='exam'?'สอบเข้าโดยสุ่ม ติดราว '+(100-CUT[t])+'% ถ้าไม่ติดไปเรียน'+TR[Math.min(FAM.tier,1)][0]+'แทน':''}</p><button class="btn g" onclick="cov();goG()">ยืนยัน</button><button class=btn onclick=cov()>กลับไปเลือกใหม่</button>`)}
+function goG(){const t=SEL,ln=t>FAM.tier;if(load()&&!confirm('มีเซฟอยู่แล้ว เริ่มใหม่จะเขียนทับ ต้องการเริ่มใหม่ไหม?'))return;ADM={mode:t>=2?MODE:'direct',loan:ln};PF=Object.assign({},FAM,{tier:SEL,fam:FAM.tier});begin()}
+function cont(){const s=load();if(!s){alert('เซฟเสียหายหรือไม่มี');return menu()}S=Object.assign(init(),s);if(!s.y0)S.y0=snap();S.yr=S.yr||[];S.yn=S.yn||[];S.day>1?plan():play(pickSc())}
+/* ---- สรุปรายปี ---- */
+const snap=()=>({money:S.money,trust:S.trust,mood:S.mood,skill:S.skill,look:S.look});
+const kf=n=>{const a=Math.abs(n);return a>=1e6?+(a/1e6).toFixed(1)+' ล้าน':a>=1e3?+(a/1e3).toFixed(a>=1e5?0:1)+'k':Math.round(a)+''};
+const sg=n=>(n>=0?'+':'')+Math.round(n);
+function closeYear(a0){let pay=0,intr=0;const db=S.debt||0;if(db>0){pay=Math.min(Math.max(0,S.money),Math.round(db*.2));S.money-=pay;S.debt=db-pay;intr=Math.round(S.debt*.05);S.debt+=intr}const y=S.y0||snap(),d=Math.round(S.money-y.money),Y={a0,a1:age(),d,mn:S.money,mood:S.mood,dt:S.trust-y.trust,dk:S.skill-y.skill,dl:S.look-y.look,news:(S.yn||[]).slice(-2),pay,intr,debt:S.debt||0};S.yr=S.yr||[];S.yr.push({a:a0,d});S.yn=[];S.y0=snap();return Y}
+function yearSum(Y){const H=S.yr,mx=Math.max(1,...H.map(x=>Math.abs(x.d)));
+const bars=H.map((x,i)=>{const h=x.d?Math.max(3,Math.round(Math.abs(x.d)/mx*92)):0;return`<div class="yb${i<H.length-1?' old':''}" title="อายุ ${x.a}: ${x.d<0?'-':'+'}${kf(x.d)}">${h?`<i class="${x.d>=0?'p':'n'}" style="height:${h}px"></i>`:''}</div>`}).join('');
+const ax=H.map(x=>`<span>${x.a}</span>`).join('');
+const mood=Y.mood>=70?'ตอนนี้อีฟอารมณ์ดี อยู่ใกล้กันแล้วสบายใจ':Y.mood>=45?'อารมณ์อีฟค่อนข้างนิ่ง ปีนี้ไม่มีอะไรหวือหวา':Y.mood>=25?'อีฟดูเหนื่อยล้าลงเรื่อย ๆ อย่าลืมใส่ใจเธอบ้าง':'อีฟอารมณ์ย่ำแย่ ความสัมพันธ์เริ่มสั่นคลอน';
+const gov=S.vote?(S.vote=='ไม่ไปเลือกตั้ง'?'ครั้งล่าสุดคุณไม่ได้ไปเลือกตั้ง':'ครั้งล่าสุดคุณลงคะแนนให้'+S.vote):'ยังไม่มีการเลือกตั้งทั่วไป';
+const d=Y.d,dc=d>0?'up':d<0?'dn':'',dt=d>0?'▲ '+kf(d):d<0?'▼ '+kf(d):'– 0';
+A.innerHTML=`<div class=ys><div class=kk><b>กระโดดเวลา</b>${Y.a0<=17?'วัยเรียน · ม.'+(Y.a0-11):'วัยทำงาน'}</div><h2>ผ่านไป 1 ปี · อายุ ${Y.a0} → ${Y.a1}</h2>
+<div class=ysc role=img aria-label="กราฟเงินที่เก็บได้ต่อปี ปีนี้ ${d<0?'ติดลบ ':''}${kf(d)}">${bars}</div><div class=yax>${ax}</div>
+<div class=ylg><span><i style="background:#34d399;border-radius:4px"></i>เงินที่เก็บได้ต่อปี</span><span><i style="background:#fb7185;border-radius:4px"></i>ติดลบ</span></div>
+<div class=y3><div class=yk><div class=yh>${ico('clock',26)}<span>ช่วงนี้</span></div><b class="${dc}">${dt}</b></div><div class=yk><div class=yh>${ico('coin',26)}<span>เงินเก็บ</span></div><b>${fm(Y.mn)}</b></div><div class=yk><div class=yh>${ico('house',26)}<span>รายได้บ้าน/เดือน</span></div><b>${kf(S.inc||0)}</b></div></div>
+<div class=ym>${ico('smile',22)}<span>${mood}</span></div><div class=yd>ไว้ใจ ${sg(Y.dt)} · ความรู้ ${sg(Y.dk)} · ความสวย ${sg(Y.dl)}</div>
+<div class=yg>${ico('pin',16)}<span>บ้านเมืองตอนนี้: ${gov}</span></div>${Y.news.length?`<div class=yg style="margin-left:26px">เหตุการณ์ปีนี้: ${Y.news.join(' · ')}</div>`:''}
+${Y.debt||Y.pay?`<div class=yg>${ico('coin',16)}<span>หนี้กู้เรียนเหลือ ${fm(Y.debt)} (ผ่อนปีนี้ ${fm(Y.pay)} · ดอกเบี้ย +${fm(Y.intr)})</span></div>`:''}<button class=yn onclick=yGate()>ต่อไป</button></div>`;window.scrollTo(0,0);save();beep(660,.12,'triangle')}
 menu();
 </script></body></html>
