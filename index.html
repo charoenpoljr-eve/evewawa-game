@@ -715,10 +715,10 @@ const CGE={best:'good',good:'good',chosen:'good',wed:'good',lover:'good',left:'s
 const CGY={y_ask:'ask',y_prop:'prop'};
 (function(){
 const st=document.createElement('style');
-st.textContent='.cgm .ch{display:none!important}.cgi{display:block;width:calc(100% - 24px);margin:12px;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.35)}.pn .cgi{width:100%;margin:0 0 12px}';
+st.textContent='.cgm .ch{display:none!important}.cgs{position:absolute;left:50%;top:13%;transform:translateX(-50%);width:auto;height:auto;max-width:94%;max-height:60%;border-radius:12px;border:2px solid rgba(255,255,255,.55);box-shadow:0 8px 28px rgba(0,0,0,.55);z-index:1}.cgi{display:block;width:calc(100% - 24px);margin:12px;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.35)}.pn .cgi{width:100%;margin:0 0 12px}';
 document.head.appendChild(st);
 const img=k=>'<img class=cgi alt="" src="'+CGIMG[k]+'">';
-const ost=stage;stage=function(bg,we,ee){ost(bg,we,ee);let k=CGK=='exam'?CGX:CGK;if(k&&CGIMG[k]){const s=document.querySelector('.stage'),b=document.getElementById('bg');if(s&&b){s.classList.add('cgm');const im=new Image();im.className='bg';im.id='bg';im.src=CGIMG[k];b.replaceWith(im)}}};
+const ost=stage;stage=function(bg,we,ee){ost(bg,we,ee);let k=CGK=='exam'?CGX:CGK;if(k&&CGIMG[k]){const s=document.querySelector('.stage'),b=document.getElementById('bg');if(s&&b){s.classList.add('cgm');const im=new Image();im.className='cgs';im.alt='';im.src=CGIMG[k];b.insertAdjacentElement('afterend',im)}}};
 const oex=examSc;examSc=function(){try{CGX=(S.skill-need())>=0?'pass':'fail'}catch(e){CGX='pass'}return oex()};
 const op=play;play=function(sc){CGK=CGM[sc.id]||null;try{op(sc)}finally{CGK=null}};
 const oe2=ending;ending=function(k){const g=CGE[k];CGK=g||null;try{oe2(k)}finally{CGK=null}if(g){const p=document.querySelector('#ov .pn');if(p)p.insertAdjacentHTML('afterbegin',img(g))}};
